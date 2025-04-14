@@ -1157,26 +1157,9 @@ textarea.form-input {
   max-height: 200px;
   resize: vertical;
   margin-bottom: 25px;
-  margin-top: 25px !important; /* Added consistent spacing */
 }
 
 textarea.form-input::-webkit-resizer { display: none; }
-
-/* Form status styling */
-#form-status {
-  margin-bottom: 15px;
-  display: none;
-}
-
-.success-message {
-  color: var(--orange-yellow-crayola);
-  font-weight: 500;
-}
-
-.error-message {
-  color: #ff6b6b;
-  font-weight: 500;
-}
 
 .form-input:focus:invalid { border-color: var(--bittersweet-shimmer); }
 
@@ -1225,7 +1208,29 @@ textarea.form-input::-webkit-resizer { display: none; }
 
 
 
+/*-----------------------------------*\
+  #FOOTER
+\*-----------------------------------*/
 
+.footer {
+  text-align: center;
+  padding: 15px 0;
+  border-top: 1px solid var(--jet);
+  margin-top: 30px;
+  background-color: var(--eerie-black-2);
+  position: fixed;
+  bottom: 60px;
+  left: 0;
+  right: 0;
+  z-index: 10;
+  width: 100%;
+}
+
+.copyright {
+  color: var(--orange-yellow-crayola);
+  font-size: var(--fs-6);
+  font-weight: var(--fw-500);
+}
 
 /*-----------------------------------*\
   #RESPONSIVE
