@@ -22,6 +22,15 @@ const modalContainer = document.querySelector("[data-modal-container]");
 const modalCloseBtn = document.querySelector("[data-modal-close-btn]");
 const overlay = document.querySelector("[data-overlay]");
 
+// Skills progress bar update from <data> values
+document.querySelectorAll('.skills-item').forEach(item => {
+  const percentage = item.querySelector('data').value;
+  const progressBar = item.querySelector('.skill-progress-fill');
+  if (progressBar) {
+    progressBar.style.width = percentage + '%';
+  }
+});
+
 // modal variable
 const modalImg = document.querySelector("[data-modal-img]");
 const modalTitle = document.querySelector("[data-modal-title]");
